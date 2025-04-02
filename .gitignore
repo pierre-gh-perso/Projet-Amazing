@@ -1,6 +1,7 @@
 /Git-2.48.1-64-bit.exe
 /venv.zip
 /data/cleaned
-/data/output
+/data/output/*.parquet
+/data/output/*.csv
 data/processed
 data/raw
