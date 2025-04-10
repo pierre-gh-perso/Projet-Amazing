@@ -1,0 +1,17 @@
+# Utilise une image officielle Python
+FROM python:3.11-slim
+
+# Crée un répertoire de travail dans le conteneur
+WORKDIR /app
+
+# Copie les fichiers requirements dans le conteneur
+COPY ../requirements.txt .
+
+# Installation des dépendances
+RUN pip install --upgrade pip && pip install -r requirements.txt
+
+# Copie le reste du projet dans le conteneur
+COPY .. .
+
+# Commande par défaut (écrasable par docker-compose)
+CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--port=5000", "--allow-root", "--NotebookApp.token=''", "--NotebookApp.password=''"]

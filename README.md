@@ -11,8 +11,8 @@ amazing/
 ├── data/
 │   ├── raw/              # Données brutes initiales
 │   ├── cleaned/          # Données nettoyées
-│   ├── processed/        # Données vectorisées, PCA, clustering
-│   └── output/           # Résultats finaux (user_features, clusters, modèles .pkl)
+│   ├── processed/        # Données vectorisées
+│   └── output/           # Résultats finaux
 │
 ├── notebooks/
 │   ├── 1- feature_engineering.ipynb
@@ -22,17 +22,20 @@ amazing/
 │   └── 4- test_promotion.ipynb
 │
 ├── src/
-│   ├── preprocessing/        # Fonctions de préparation des données
-│   ├── clustering/           # ACP, K-means, sauvegarde du modèle
-│   ├── prediction/           # Pipeline de prédiction pour nouveaux utilisateurs
-│   └── utils.py              # Fonctions utilitaires communes
+│   ├── 0- Transformation parquet.ipynb        # Transformation en parquet
+│   ├── 1- data_cleaning.ipynb                 # Nettoyage des données
+│   ├── 2.1- explo_brands.ipynb                
+│   └── 2.2- explo_category_code.ipynb         
 │
 ├── docker/
+│   ├── docker-compose.yml
+│   ├── fast-api-predict.py
 │   └── Dockerfile            # Image Docker avec tous les packages nécessaires
 │
 ├── requirements.txt          # Dépendances Python
-├── README.md                 # Ce fichier
-└── .gitignore
+├── README.md                 
+├──.gitignore
+└── Sujet MSPR_Modèle_IA.pdf  #Sujet de l'étude
 ```
 Pour des raisons techniques, aucun fichier .parquet n'a été inclus dans le repos git.
 

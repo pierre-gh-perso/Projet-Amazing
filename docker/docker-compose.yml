@@ -1,0 +1,31 @@
+version: '3.9'
+
+services:
+  amazing-app:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: amazing-segmentation
+    ports:
+      - "5000:5000"
+    volumes:
+      - ..:/app
+    command: >
+      jupyter notebook
+      --ip=0.0.0.0
+      --port=5000
+      --allow-root
+      --NotebookApp.token=''
+      --NotebookApp.password=''
+
+  api:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: amazing-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ..:/app
+    command: >
+      uvicorn src.api.fastapi_predict:app --host 0.0.0.0 --port 8000 --reload
