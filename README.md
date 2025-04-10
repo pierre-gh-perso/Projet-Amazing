@@ -44,9 +44,9 @@ Pour des raisons techniques, aucun fichier .parquet n'a été inclus dans le rep
 ## Objectifs
 
 - Construire un **modèle de clustering robuste** à partir des données comportementales des utilisateurs.
-- Permettre l’analyse et la visualisation des **profils clients typiques** (radar chart, barplot, PCA).
+- Permettre l’analyse et la visualisation des **profils clients typiques**.
 - Simuler des **scénarios marketing** et mesurer leur impact sur les groupes (AB testing).
-- Industrialiser le pipeline via **Docker** et envisager un déploiement sur **Kubernetes**.
+- Industrialiser le pipeline via Docker et FastAPI.
 - Intégrer les résultats dans le **SI de l’entreprise (Redshift / BI / CRM)**.
 
 ---
@@ -115,9 +115,10 @@ Le projet est accessible sur [http://localhost:8888](http://localhost:8888).
 
 - Python, Pandas, Scikit-learn
 - Jupyter Notebooks
-- Docker, Kubernetes
+- Docker, FastAPI 
 - Matplotlib, Seaborn, Plotly
 - Redshift (prévu pour intégration)
+- Kubernetes (envisagé pour montée en charge)
 
 ---
 
