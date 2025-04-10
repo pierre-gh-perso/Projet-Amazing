@@ -7,7 +7,7 @@ Ce projet vise à concevoir, entraîner et industrialiser un modèle de **segmen
 ## Structure du projet
 
 ```
-📦 amazing-segmentation/
+amazing/
 ├── data/
 │   ├── raw/              # Données brutes initiales
 │   ├── cleaned/          # Données nettoyées
@@ -34,6 +34,7 @@ Ce projet vise à concevoir, entraîner et industrialiser un modèle de **segmen
 ├── README.md                 # Ce fichier
 └── .gitignore
 ```
+Pour des raisons techniques, aucun fichier .parquet n'a été inclus dans le repos git.
 
 ---
 
