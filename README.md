@@ -56,7 +56,7 @@ Pour des raisons techniques, aucun fichier .parquet n'a été inclus dans le rep
 ### 1. Cloner le repo
 
 ```bash
-git clone https://github.com/<ton-nom-utilisateur>/amazing-segmentation.git
+git clone https://github.com/pierre-gh-perso/Projet-Amazing.git
 cd amazing-segmentation
 ```
 
@@ -82,13 +82,13 @@ Les notebooks sont à exécuter dans cet ordre :
 ### 1. Build de l’image
 
 ```bash
-docker build -t amazing-segmentation .
+docker build -t Projet-Amazing
 ```
 
 ### 2. Lancer le container
 
 ```bash
-docker run -p 8888:8888 amazing-segmentation
+docker run -p 8888:8888 Projet-Amazing
 ```
 
 Le projet est accessible sur [http://localhost:8888](http://localhost:8888).
